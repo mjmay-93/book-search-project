@@ -125,7 +125,9 @@ function App() {
         >
           Submit
         </div>
-        <div>{resultsList}</div>
+        <div className="m-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-center ">
+          {resultsList}
+        </div>
       </div>
     </div>
   );
