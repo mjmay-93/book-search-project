@@ -88,7 +88,7 @@ function App() {
         </div>
 
         <h3 className="text-lg font-semibold text-center">{d.title}</h3>
-        <p className="text-gray-600 text-center">
+        <p className="text-center">
           {!d.author_name ? "" : d.author_name.join(", ")}
         </p>
         <button
@@ -98,9 +98,7 @@ function App() {
           Description
         </button>
         {expandedBook === `book-${d.cover_i}` && (
-          <p className="mt-2 p-2 bg-gray-100 rounded w-full max-w-md">
-            {moreResults}
-          </p>
+          <p className="mt-2 p-2 w-full max-w-md">{moreResults}</p>
         )}
       </div>
     );
